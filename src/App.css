@@ -1,0 +1,156 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  backdrop-filter: blur(2px); 
+  overflow: auto; 
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; 
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+h1, h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #8ef292;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #a4524c;
+  color: white;
+  margin-left: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.weather-card {
+  background-color: rgba(243, 235, 235, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.weather-card h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #06448a;
+}
+
+.weather-card p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #06448a;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.forecast-day {
+  background-color: rgba(243, 235, 235, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  #root {
+    height: auto;
+    padding: 10px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button[type="button"] {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-day {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .forecast {
+    flex-wrap: wrap;
+  }
+
+  .forecast-day {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+}
+
+
