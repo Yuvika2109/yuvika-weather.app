@@ -4,7 +4,8 @@ HERE IS THE DEPLOYED LINK: https://yuvika-weather-app.netlify.app/
 
 A short lookup of my weather app:
 ![image](https://github.com/user-attachments/assets/7a2531fd-94d8-4b62-b8c4-d1fd7422ef04)
-![image](https://github.com/user-attachments/assets/059d330f-4047-402e-a9b1-90f7842c1c8a)
+![image](https://github.com/user-attachments/assets/f41058d1-e36e-4b52-9f9d-74063b6baf21)
+
 
 
 
